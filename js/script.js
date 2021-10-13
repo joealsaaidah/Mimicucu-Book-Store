@@ -1,6 +1,17 @@
+/* search bar */
 searchForm = document.querySelector(".search-form");
 document.querySelector("#search-btn").onclick = () => {
   searchForm.classList.toggle("active");
+};
+
+/* login form */
+let loginForm = document.querySelector(".login-form-container");
+document.querySelector("#login-btn").onclick = () => {
+  loginForm.classList.toggle("active");
+};
+document.querySelector("#close-login-btn").onclick = () => {
+  loginForm.classList.contains("active") &&
+    loginForm.classList.remove("active");
 };
 
 window.onscroll = () => {
